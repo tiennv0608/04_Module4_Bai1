@@ -18,7 +18,7 @@ public class CustomerController {
     @Autowired
     private CustomerService customerService;
 
-    @GetMapping("/customers")
+    @GetMapping("customers")
     public ModelAndView showList() {
         ModelAndView modelAndView = new ModelAndView("customers/list.jsp");
         List<Customer> customers = customerService.findAll();
